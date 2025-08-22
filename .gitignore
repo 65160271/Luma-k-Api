@@ -54,3 +54,16 @@ data/
 # models (tracked via LFS; force-add when needed)
 models/FillForm_model/t5_autofill_model/*
 models/Task/models/*
+ai311/
+.venv/
+venv/
+env/
+**/site-packages/
+__pycache__/
+*.pyc
+.DS_Store
+logs/
+outputs/
+wandb/
+keep/
+data/
