@@ -8,3 +8,49 @@ data/
 models/FillForm_model/t5_autofill_model/*
 models/Task/models/*
 .DS_Store
+# local envs
+ai311/
+.venv/
+venv/
+env/
+**/site-packages/
+
+# python cache
+__pycache__/
+*.pyc
+
+# training artifacts
+logs/
+outputs/
+wandb/
+keep/
+data/
+
+# models tracked by LFS (still force-add when needed)
+models/FillForm_model/t5_autofill_model/*
+models/Task/models/*
+
+# OS
+.DS_Store
+# local envs
+ai311/
+.venv/
+venv/
+env/
+**/site-packages/
+
+# caches & OS
+__pycache__/
+*.pyc
+.DS_Store
+
+# training artifacts
+logs/
+outputs/
+wandb/
+keep/
+data/
+
+# models (tracked via LFS; force-add when needed)
+models/FillForm_model/t5_autofill_model/*
+models/Task/models/*
