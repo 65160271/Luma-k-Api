@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+logs/
+outputs/
+wandb/
+keep/
+data/
+models/FillForm_model/t5_autofill_model/*
+models/Task/models/*
+.DS_Store

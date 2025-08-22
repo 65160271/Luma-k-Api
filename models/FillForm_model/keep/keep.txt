@@ -1,0 +1,19 @@
+import torch
+from transformers import T5Tokenizer, T5ForConditionalGeneration
+
+model_dir = "t5_autofill_model"
+tokenizer = T5Tokenizer.from_pretrained(model_dir)
+model = T5ForConditionalGeneration.from_pretrained(model_dir)
+
+def extract_fields(input_text):
+    prompt = f"Extract fields: {input_text}"
+    inputs = tokenizer(prompt, return_tensors="pt")
+    with torch.no_grad():
+        outputs = model.generate(**inputs, max_length=128)
+    decoded = tokenizer.decode(outputs[0], skip_special_tokens=True)
+    return decoded
+
+# ตัวอย่างการใช้งาน
+# test_input = "1103900144378 ชวัลญา เธียรกมลศุภโชค 99/382 ถนนนนทรี แขวงช่องนนทรี 10120 50 years"
+test_input = "1103900144378 ชวัลญา เธียรกมลศุภโชค"
+print(extract_fields(test_input))

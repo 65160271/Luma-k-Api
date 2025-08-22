@@ -1,0 +1,9 @@
+{"manufacturer": "Honda", "type": "Sedan"}
+{"manufacturer": "Toyota", "type": "AE86"}
+{"engine": "Electric"}
+{"engine": "Gasoline"}
+{"hybrid": "Mild Hybrid"}
+{"hybrid": "Plug-in Hybrid"}
+{"type": "SUV"}
+{"usage": "Private"}
+{"usage": "Commercial"}
